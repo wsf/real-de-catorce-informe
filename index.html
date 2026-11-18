@@ -9,18 +9,19 @@ h2{border-top:1px solid var(--line);padding-top:1.3rem;margin-top:2.5rem}a{color
 .table{overflow:auto;background:white;border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;width:100%;min-width:36rem}th,td{padding:.7em .85em;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#e9f1ec}tr:last-child td{border-bottom:0}td:first-child{white-space:nowrap}td:last-child{min-width:6rem}
 .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:.75rem;margin:1.25rem 0}.metrics div{background:#e9f1ec;border:1px solid var(--line);border-radius:8px;padding:.85rem}.metrics dd{margin:0;color:var(--accent);font-size:1.9rem;font-weight:700}
 details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--accent);font-weight:700;cursor:pointer}details .table{margin:.75em 0}
-</style></head><body><main><nav aria-label="Navegación"><a href="#modulos">Módulos</a> · <a href="#commits">Detalle mensual de commits</a></nav><h1>Informe completo de esfuerzo — Real de Catorce</h1>
+</style></head><body><main><nav aria-label="Navegación"><a href="#repositorio-cliente">Repositorio del cliente</a> · <a href="#modulos">Módulos</a> · <a href="#commits">Detalle mensual de commits</a></nav><h1>Informe completo de esfuerzo — Real de Catorce</h1>
 <p><strong>Corte analizado:</strong> 12/11/2025–21/09/2026<br />
 <strong>Repositorio:</strong> <code>wsf/hito-devman</code>, rama <code>origin/18.0</code>, referencia <code>60121b833a5ae7e90ea097d032bff7bd0afd0be3</code><br />
 <strong>Alcance:</strong> commits directos sin merges sobre el módulo principal, complementos identificados y dependencias incorporadas.</p>
 <h2 id="resumen">1. Resumen general</h2>
 <dl class="metrics">
   <div><dt>Horas equivalentes estimadas</dt><dd>937,5 h</dd></div>
-  <div><dt>Commits únicos</dt><dd>214</dd></div>
-  <div><dt>Módulos identificados en Git</dt><dd>7</dd></div>
-  <div><dt>Personas consideradas</dt><dd>2</dd></div>
+  <div><dt>Commits de desarrollo estimados</dt><dd>214</dd></div>
+  <div><dt>Commits del repositorio del cliente</dt><dd>292</dd></div>
+  <div><dt>Módulos identificados en las dos ramas 18.0</dt><dd>12</dd></div>
+  <div><dt>Commits de Samuel en el repositorio del cliente</dt><dd>12</dd></div>
 </dl>
-<p>Matias Marziali registró 203 commits atribuibles y Samuel Marcano figura con 0 commits atribuibles en el historial analizado. Jinzo Bot aportó 11 commits y se identifica por separado como cuenta automatizada. Las horas trabajadas registradas en Odoo están pendientes de verificación.</p>
+<p>El bloque estimado de hito-devman incluye 203 commits de Matias Marziali y 11 de Jinzo Bot. En el repositorio del cliente, Samuel Marcano incorporó cuatro módulos presentes en 18.0. Lucas Burgos incorporó el módulo de fusión de pedidos y Jinzo incorporó el PDF de CRM. Las horas trabajadas registradas en Odoo están pendientes de verificación.</p>
 
 <div class="table" tabindex="0"><table>
 <thead>
@@ -48,7 +49,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td>Samuel Marcano</td>
-<td style="text-align: right;">0 atribuibles</td>
+<td style="text-align: right;">0 atribuibles en hito-devman</td>
 <td style="text-align: right;">No estimable desde Git</td>
 </tr>
 <tr>
@@ -61,6 +62,37 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 <p><strong>Esfuerzo atribuible a Matias:</strong> <strong>914,5 h-equivalentes</strong> en 203 commits.<br />
 <strong>Esfuerzo adicional de Jinzo Bot:</strong> <strong>23,0 h-equivalentes</strong> en 11 commits.</p>
 <p>Las horas son una <strong>estimación técnica conservadora</strong>, no partes reales: baja = 1,5 h; media = 4 h; alta = 8 h. La clasificación considera archivos y líneas modificadas. No incluye reuniones, análisis previo, pruebas manuales, despliegues, soporte ni retrabajo fuera de Git.</p>
+<section id="repositorio-cliente">
+<h2>Repositorio del cliente y aportes de Samuel Marcano</h2>
+<p>Se revisaron siete ramas de <a href="https://github.com/LGBurgos/cl-realdecatorce">cl-realdecatorce</a>. El historial accesible contiene <strong>292 commits únicos</strong> (289 directos y 3 merges). De ellos, 82 son alcanzables desde <code>18.0</code> (81 directos y 1 merge). La rama principal se verificó en <code>52f7fde9eea9</code>.</p>
+<p><strong>Samuel Marcano tiene 12 commits atribuibles</strong> (10 directos y 2 merges). Siete llegaron al historial de <code>18.0</code>. Los cinco restantes se encontraron en ramas de trabajo. Se agruparon las identidades Git «Samuel Marcano» y «samuelmarcanoxetechs».</p>
+<h3>Módulos del árbol de 18.0</h3>
+<div class="table" tabindex="0"><table><thead><tr><th>Módulo</th><th>Incorporado por</th><th>Fecha</th></tr></thead><tbody>
+<tr><td><code>crm_check_approve_limiter</code></td><td>Samuel Marcano</td><td>20/10/2025</td></tr>
+<tr><td><code>product_multi_uom</code></td><td>Samuel Marcano</td><td>25/11/2025</td></tr>
+<tr><td><code>bi_product_secondary_uom</code></td><td>Samuel Marcano</td><td>23/12/2025</td></tr>
+<tr><td><code>sh_access_management</code></td><td>Samuel Marcano</td><td>18/05/2026</td></tr>
+<tr><td><code>realdecatorce_crm_pdf</code></td><td>Jinzo (Hitofusion)</td><td>23/09/2026</td></tr>
+<tr><td><code>ps_merge_sale_order</code></td><td>Lucas Burgos</td><td>29/09/2025</td></tr>
+</tbody></table></div>
+<p>La incorporación se atribuye al primer commit que agregó el manifiesto en cada repositorio. <code>bi_product_secondary_uom</code> aparece en ambos repositorios y se cuenta una sola vez por nombre. En el historial de <code>STG</code> también figuran incorporaciones de Samuel de <code>excel_online_connector</code>, <code>advanced_excel_reports</code> y <code>realdecatorce_check_split_fix</code>. Los manifiestos en Git no acreditan instalación en Odoo.</p>
+<h3>Detalle de los 12 commits atribuibles a Samuel</h3>
+<div class="table" tabindex="0"><table><thead><tr><th>Fecha Git</th><th>Commit</th><th>Descripción</th><th>Alcance</th></tr></thead><tbody>
+<tr><td>20/10/2025</td><td>09939d5</td><td>Incorporó el módulo de control de aprobación en CRM.</td><td>18.0</td></tr>
+<tr><td>17/11/2025</td><td>05c79a3</td><td>Agregó un archivo comprimido del módulo CRM.</td><td>18.0</td></tr>
+<tr><td>25/11/2025</td><td>3d77652</td><td>Incorporó el módulo de unidades de medida múltiples.</td><td>18.0</td></tr>
+<tr><td>23/12/2025</td><td>d11c4a7</td><td>Incorporó el módulo de unidades de medida secundarias.</td><td>18.0</td></tr>
+<tr><td>10/04/2026</td><td>e223836</td><td>Incorporó el conector Excel Online.</td><td>STG y rama del conector</td></tr>
+<tr><td>10/04/2026</td><td>8dc8207</td><td>Integró la rama del conector Excel Online mediante un merge.</td><td>STG</td></tr>
+<tr><td>04/05/2026</td><td>01e7b5e</td><td>Incorporó el módulo de reportes avanzados de Excel.</td><td>STG</td></tr>
+<tr><td>18/05/2026</td><td>0b9af35</td><td>Incorporó el módulo de gestión de accesos.</td><td>18.0</td></tr>
+<tr><td>02/06/2026</td><td>8713e6f</td><td>Agregó una referencia al submódulo OCA de compras.</td><td>STG</td></tr>
+<tr><td>16/07/2026</td><td>bf6bbee</td><td>Incorporó el ajuste de pagos con cheques en la rama de pruebas.</td><td>STG</td></tr>
+<tr><td>26/09/2026</td><td>bf8310f</td><td>Integró mediante un merge una actualización de referencia al submódulo de desarrollo.</td><td>18.0</td></tr>
+<tr><td>30/09/2026</td><td>59ce69f</td><td>Actualizó la referencia del submódulo para incorporar el ajuste de ordenamiento de líneas.</td><td>18.0</td></tr>
+</tbody></table></div>
+<p>Los 292 commits del repositorio del cliente incluyen integración, configuración y dependencias. Las 937,5 horas equivalentes corresponden al bloque de desarrollo previamente estimado en <code>hito-devman</code>. El esfuerzo del repositorio del cliente y las horas registradas en Odoo quedan por verificar.</p>
+</section>
 <h2>2. Esfuerzo mensual de Matias — bloque de 202 commits</h2>
 <div class="table" tabindex="0"><table>
 <thead>
@@ -316,7 +348,7 @@ La asignación de horas se reparte cuando un commit toca más de un módulo, par
 <li><strong>No son horas reales:</strong> son horas-equivalentes derivadas de Git.</li>
 <li><strong>Estimación conservadora:</strong> un commit alto queda limitado a 8 h aunque pueda representar varios días.</li>
 <li><strong>No mide actividad fuera de Git:</strong> relevamiento, reuniones, pruebas, soporte y despliegues pueden elevar el esfuerzo real.</li>
-<li><strong>Samuel:</strong> no existe identidad Git verificable para atribuir commits u horas; esto no prueba ausencia de trabajo funcional.</li>
+<li><strong>Samuel:</strong> la actividad atribuible está documentada en el <a href="#repositorio-cliente">repositorio del cliente</a>. Sus horas están pendientes de verificación.</li>
 <li><strong>Instalación pendiente:</strong> la presencia del código en la rama no confirma que el módulo esté instalado en producción.</li>
 <li><strong>Corrección del cálculo previo:</strong> el total de 904 h se reemplaza por <strong>906,5 h</strong> porque el parser anterior omitió un archivo con ruta renombrada. El cálculo actual procesa campos <code>numstat</code> por tabulación.</li>
 </ul>
