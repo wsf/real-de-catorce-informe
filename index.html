@@ -8,7 +8,7 @@ main{max-width:1120px;margin:auto;padding:clamp(1rem,4vw,3rem)}h1,h2{line-height
 h2{border-top:1px solid var(--line);padding-top:1.3rem;margin-top:2.5rem}a{color:var(--accent)}nav{margin-bottom:1rem}code{overflow-wrap:anywhere}
 .table{overflow:auto;background:white;border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;width:100%;min-width:36rem}th,td{padding:.7em .85em;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#e9f1ec}tr:last-child td{border-bottom:0}td:first-child{white-space:nowrap}td:last-child{min-width:6rem}
 details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--accent);font-weight:700;cursor:pointer}details .table{margin:.75em 0}
-</style></head><body><main><nav aria-label="Navegación"><a href="#commits">Ir al detalle mensual de commits</a></nav><h1>Informe completo de esfuerzo — Real de Catorce</h1>
+</style></head><body><main><nav aria-label="Navegación"><a href="#modulos">Módulos</a> · <a href="#commits">Detalle mensual de commits</a></nav><h1>Informe completo de esfuerzo — Real de Catorce</h1>
 <p><strong>Corte analizado:</strong> 12/11/2025–21/09/2026<br />
 <strong>Repositorio:</strong> <code>wsf/hito-devman</code>, rama <code>origin/18.0</code>, referencia <code>60121b833a5ae7e90ea097d032bff7bd0afd0be3</code><br />
 <strong>Alcance:</strong> commits directos sin merges sobre el módulo principal, complementos identificados y dependencias incorporadas.</p>
@@ -218,12 +218,14 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 </tbody>
 </table></div>
-<h2>4. Esfuerzo por módulo</h2>
-<p>La asignación de horas se reparte cuando un commit toca más de un módulo, para que el total no se duplique.</p>
+<h2 id="modulos">4. Módulos de Real de Catorce</h2>
+<p>El historial de la rama 18.0 muestra un módulo principal y seis complementos. La fecha de incorporación corresponde al primer commit que agregó el manifiesto de cada módulo. El estado de instalación en Odoo está pendiente de verificación.
+La asignación de horas se reparte cuando un commit toca más de un módulo, para que el total no se duplique.</p>
 <div class="table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Módulo / punto</th>
+<th>Incorporado</th>
 <th>Autor</th>
 <th style="text-align: right;">Commits relacionados</th>
 <th style="text-align: right;">Horas estimadas</th>
@@ -233,6 +235,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 <tbody>
 <tr>
 <td><code>rd14_flexible_contracts</code></td>
+<td>12/11/2025</td>
 <td>Matias</td>
 <td style="text-align: right;">196</td>
 <td style="text-align: right;">879,0 h</td>
@@ -240,6 +243,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>realdecatorce_purchase_payment_qty</code></td>
+<td>27/08/2026</td>
 <td>Matias</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">17,5 h</td>
@@ -247,6 +251,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>realdecatorce_approvals_ext</code></td>
+<td>14/08/2026</td>
 <td>Matias</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4,0 h</td>
@@ -254,6 +259,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>realdecatorce_account_analytic_ext</code></td>
+<td>18/08/2026</td>
 <td>Matias</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4,0 h</td>
@@ -261,6 +267,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>realdecatorce_check_split_fix</code></td>
+<td>16/07/2026</td>
 <td>Matias</td>
 <td style="text-align: right;">1 compartido</td>
 <td style="text-align: right;">2,0 h</td>
@@ -268,6 +275,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>bi_product_secondary_uom</code></td>
+<td>23/12/2025</td>
 <td>Matias</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">8,0 h</td>
@@ -275,6 +283,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><code>realdecatorce_account_excel_import</code></td>
+<td>07/09/2026</td>
 <td>Jinzo Bot</td>
 <td style="text-align: right;">11</td>
 <td style="text-align: right;">23,0 h</td>
@@ -282,6 +291,7 @@ details{border-bottom:1px solid var(--line);padding:.6em 0}summary{color:var(--a
 </tr>
 <tr>
 <td><strong>Total</strong></td>
+<td></td>
 <td></td>
 <td style="text-align: right;"><strong>214 commits distintos</strong></td>
 <td style="text-align: right;"><strong>937,5 h</strong></td>
